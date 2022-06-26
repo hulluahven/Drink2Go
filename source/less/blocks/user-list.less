@@ -1,0 +1,110 @@
+.user-list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 22px;
+  right: 63px;
+  gap: 3px;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    position: inherit;
+    gap: 0;
+    align-items: center;
+  }
+}
+
+.user-list__link {
+  padding: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 31px 20px 31px 20px;
+    display: flex;
+    width: 19px;
+    height: 18px;
+    justify-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    gap: 8px;
+  }
+}
+
+.user-list__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: @base-black;
+    letter-spacing: 1px;
+  }
+}
+
+.user-list__link:hover {
+  outline: 0;
+}
+
+.user-list__link:hover .user-list__text {
+  color: @base-primary;
+}
+
+.user-list__link:focus {
+  outline: 0;
+}
+
+.user-list__link:focus .user-list__text {
+  color: @base-primary;
+}
+
+.user-list__icon {
+  fill: @base-black;
+}
+
+.user-list__basket {
+  fill: @base-black;
+}
+
+.user-list__link:hover .user-list__basket {
+  fill: @base-primary;
+}
+
+.user-list__link:focus .user-list__basket {
+  fill: @base-primary;
+}
+
+.user-list__link:hover .user-list__icon {
+  fill: @base-primary;
+}
+
+.user-list__link:focus .user-list__icon {
+  fill: @base-primary;
+}
+
+.user-list__link:active {
+  background-color: @base-secondary;
+}
+
+.user-list__link:active .user-list__text {
+  color: @base-primary;
+}
+
+.user-list__link:active .user-list__icon {
+  fill: @base-black;
+
+  @media (min-width: @desktop-width) {
+    fill: @base-primary;
+  }
+}
+
+.user-list__link:active .user-list__basket {
+  fill: @base-black;
+
+  @media (min-width: @desktop-width) {
+    fill: @base-primary;
+  }
+}
