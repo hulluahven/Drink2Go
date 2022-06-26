@@ -1,0 +1,44 @@
+.logo__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @base-black;
+  letter-spacing: 1px;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.logo__ball {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo__short {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__full {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+  }
+}

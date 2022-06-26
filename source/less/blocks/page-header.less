@@ -1,0 +1,36 @@
+.page-header {
+  background-color: @base-white;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    padding: 0 40px 0 40px;
+    gap: 117px;
+  }
+}
+
+.page-header__logo {
+  padding: 12px 0 7px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 22px;
+    padding-left: 0;
+  }
+}
