@@ -1,0 +1,64 @@
+
+.filter-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-top: 10px;
+}
+
+.filter-form__button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 27px;
+  width: 280px;
+  padding: 9px 0 8px 0;
+  margin-bottom: 10px;
+  color: @base-primary;
+  background-color: @base-white;
+  letter-spacing: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+    margin-left: 10px;
+    width: 223px;
+    padding: 8px 0 8px;
+  }
+}
+
+.filter-form {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 252px);
+    grid-template-areas:
+      "range-set radio-set checkbox-set"
+      "button-set button-set button-set";
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(1, 252px);
+    grid-template-areas:
+      "range-set"
+      "radio-set"
+      "checkbox-set"
+      "button-set";
+  }
+}
+
+.filter-form__wrapper--range {
+  grid-area: range-set;
+}
+
+.filter-form__wrapper--radio {
+  grid-area: radio-set;
+}
+
+.filter-form__wrapper--checkbox {
+  grid-area: checkbox-set;
+}
+
+.filter-form__wrapper--button {
+  grid-area: button-set;
+}
