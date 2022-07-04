@@ -1,0 +1,38 @@
+// .contacts {
+//   grid-area: contacts-area;
+// }
+
+.contacts__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  color: @base-primary;
+}
+
+.contacts__list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 25px 0 0 18px;
+  width: 250px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 2px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.contacts__point {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  // text-transform: uppercase;
+  color: @base-black;
+}
