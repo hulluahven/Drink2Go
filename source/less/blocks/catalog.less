@@ -1,11 +1,16 @@
 
 .catalog {
-  padding-top: 60px;
+  padding: 0;
+  margin-top: 63px;
   background-color: @lightest-grey;
+  padding-bottom: 59px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 102px;
-    background-color: transparent;
+    margin-top: 101px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 120px;
   }
 }
 
@@ -17,9 +22,15 @@
   background-color: none;
 
   @media (min-width: @tablet-width) {
+    padding-top: 75px;
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 97px;
     width: 100%;
-    padding-top: 79px;
-    background-color: @lightest-grey;
+    padding-bottom: 120px;
   }
 }
 
@@ -39,11 +50,18 @@
   line-height: 36px;
   font-weight: 700;
   color: @base-black;
-  letter-spacing: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 42px;
     line-height: 64px;
+  }
+}
+
+.catalog__content-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    column-gap: 13px;
   }
 }
 
@@ -61,27 +79,38 @@
 .catalog__sorting {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 17px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 30px;
-    top: 31px;
+    right: 22px;
+    top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 27px;
+    top: 41px;
   }
 }
 
 .catalog__container {
   display: grid;
-  padding: 29px 21px 0 18px;
+  padding: 29px 16px 0 15px;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 349px 349px;
-    padding: 65px 21px 0 18px;
-    column-gap: 32px;
+    grid-template-columns: repeat(2, 346px);
+    padding: 69px 21px 0 18px;
+    column-gap: 33px;
     position: relative;
-    row-gap: 9px;
-    width: 730px;
-    margin: 0 auto;
+    row-gap: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 317px);
+    padding: 73px 21px 0 0;
+    column-gap: 30px;
+    position: relative;
+    row-gap: 12px;
   }
 }
 
@@ -92,6 +121,9 @@
   @media (min-width: @tablet-width) {
     padding: 62px 0 0;
     margin: 0 auto;
-    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 46%;
   }
 }

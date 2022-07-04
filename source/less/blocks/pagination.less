@@ -12,6 +12,11 @@
     justify-content: flex-end;
     width: 623px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 613px;
+    gap: 19px;
+  }
 }
 
 
@@ -46,6 +51,10 @@
     min-width: 101px;
     min-height: 41px;
     color: @base-primary;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 93px;
   }
 }
 
@@ -94,5 +103,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 104px;
+    right: 4%;
   }
 }

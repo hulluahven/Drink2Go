@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 0 0 21px;
+  }
 }
 
 .checkbox-fieldset__item {
@@ -19,7 +23,15 @@
   line-height: 24px;
   font-weight: 600;
   color: @base-black;
-  padding: 20px 0 0 21px;
+  padding: 24px 0 0 21px;
+
+  @media (min-width: @tablet-width) {
+    padding: 21px 0 0 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 31px 0 0 21px;
+  }
 }
 
 .checkbox-fieldset__label {
@@ -44,7 +56,6 @@
   border-radius: 25%/50%;
   vertical-align: top;
   background: @base-grey;
-  // transition: .2s;
   right: -18px;
   top: 26px;
 }
@@ -59,7 +70,6 @@
   height: 21px;
   border-radius: 50%;
   background: @base-white;
-  // transition: .15s;
 }
 
 .checkbox-fieldset__input {

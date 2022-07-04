@@ -4,6 +4,14 @@
   padding: 0;
   border: none;
   padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .filter-form__button {
@@ -26,19 +34,26 @@
     width: 223px;
     padding: 8px 0 8px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 37px;
+    margin-left: 6px;
+    width: 319px;
+    padding: 8px;
+  }
 }
 
 .filter-form {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 252px);
+    grid-template-columns: repeat(3, 250px);
     grid-template-areas:
       "range-set radio-set checkbox-set"
       "button-set button-set button-set";
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(1, 252px);
+    grid-template-columns: repeat(1, 353px);
     grid-template-areas:
       "range-set"
       "radio-set"
